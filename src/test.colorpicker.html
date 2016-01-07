@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<script type="text/javascript" src="js/jquery.js"></script>
+		<script type="text/javascript" src="js/jquery.colorPicker.js"></script>
+		<link rel="stylesheet" href="css/jquery.colorPicker.css" />
+	</head>
+
+	<body>
+		<!--<div class='colorpicker'>
+			<div class='sv'>
+				<div class='value'></div>
+				<div class='point'></div>
+			</div>
+			<div class='h'>
+				<div class='value'></div>
+				<div class='point'></div>
+			</div>
+			<div class='alpha'>
+				<div class='value'></div>
+				<div class='point'></div>
+			</div>
+			<div class='value'>
+				<label>RGB:</label><input name='rgb'></input><br />
+				<label>HEX:</label><input name='hex'></input><br />
+				<label>H:</label><input name='h'></input><br />
+				<label>S:</label><input name='s'></input><br />
+				<label>V:</label><input name='v'></input>
+			</div>
+			<div style='clear: both;'></div>
+		</div>-->
+		<input  id ='color'/>
+		<p>asdasdasd</p>
+		<p contenteditable="true">asdasdasddddd<br/>asdasdasddddd<br/>asdasdasddddd<br/>asdasdasddddd<br/>asdasdasddddd<br/>asdasdasddddd<br/>asdasdasddddd<br/>asdasdasddddd<br/>asdasdasddddd<br/>asdasdasddddd<br/></p>
+		<p contenteditable="true">asdasdasd</p>
+		<p contenteditable="true">asdasdasd</p>
+		<p>asdasdasd</p>
+		<p>asdasdasd</p>
+		<p>asdasdasd</p>
+		<p contenteditable="true">asdasdasd</p>
+		<p>asdasdasd</p>
+		<p>asdasdasd</p>
+		<p>asdasdasd</p>
+		<p>asdasdasd</p>
+		<p>asdasdasd</p>
+		<p>asdasdasd</p>
+		<p>asdasdasd</p>
+		<p>asdasdasd</p>
+	</body>
+	<script type="text/javascript">
+		$("#color").colorPicker({
+			onChange:function(event){
+				$("#color").val(event.hex);
+				$("#color").css("color",event.rgb);
+			}
+		});
+	</script>
+
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>GliEditor</title>
+		<link rel="stylesheet" href="http://apps.bdimg.com/libs/fontawesome/4.4.0/css/font-awesome.min.css" />
+		<script type="text/javascript" src="js/jquery.js" ></script>
+		
+		<!--可拖动特性-->
+		<script type="text/javascript" src="js/jquery.draggable.js" ></script>
+		
+		<!--可调大小特性-->
+		<script type="text/javascript" src="js/jquery.resizable.js" ></script>
+		<link rel="stylesheet" href="css/jquery.resizable.css" />
+		
+		<!--下拉选择器-->
+		<script type="text/javascript" src="js/jquery.select.js" ></script>
+		<link rel="stylesheet" type="text/css" href="css/jquery.select.css"/>
+		
+		<!--模态框-->
+		<script type="text/javascript" src="js/jquery.modal.js" ></script>
+		<link rel="stylesheet" href="css/jquery.modal.css" />
+		
+		<!--颜色选择器-->
+		<script type="text/javascript" src="js/jquery.colorPicker.js" ></script>
+		<link rel="stylesheet" href="css/jquery.colorPicker.css" />
+		
+		<!--编辑器-->
+		<script type="text/javascript" src="js/jquery.GliEditor.js" ></script>
+		<link rel="stylesheet" href="css/jquery.GliEditor.css" />
+	</head>
+	<body>
+		<button type="button" onclick="addPage('text')">增加文本</button>
+		<button type="button" onclick="addPage('img')">增加图片</button>
+		<div class='editor'></div>
+	</body>
+	<script type="text/javascript">
+		var pages		= [{
+				"type":"text",
+				'html':new Date().getTime(),
+			},{
+				"type":"img",
+				"html":"<img src='img/linus.png' height='100'/>",
+			}];
+		var Geditor		= $(".editor").GliEditor({
+//			width:600,
+//			height:800,
+//			menu:[
+//				['viewSourceCode'],
+//				['bold','underline','italic','strikethrough','fontFamily','fontSize'],
+//				['justify'],
+//			],
+//			pages:pages,
+		});
+		function addPage(type){
+			switch(type){
+				case "text":
+					Geditor.addPage({
+						"type":"text",
+						'html':new Date().getTime() ,
+					});
+				break;
+				case "img":
+					Geditor.addPage({
+						"type":"img",
+						'html':"<img src='img/linus.png' />",
+					});
+				break;
+			}
+		}
+	</script>
+</html>

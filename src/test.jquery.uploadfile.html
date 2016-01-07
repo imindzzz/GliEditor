@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<script type="text/javascript" src="js/jquery.js" ></script>
+		<script type="text/javascript" src="js/jquery.uploadfile.js" ></script>
+	</head>
+		
+	<body>
+		<button type="button" id='select'>选择</button>
+		<button type="button" id='upload'>上传</button>
+	</body>
+	<script type="text/javascript">
+		$.uploadfile({
+			action:"#",
+			selectBtn:$("#select"),
+			callback:function(){
+				console.log(1);
+			}
+		})
+	</script>
+</html>

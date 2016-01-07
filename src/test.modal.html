@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<link rel="stylesheet" href="css/font-awesome-4.4.0/css/font-awesome.css" />
+		<link rel="stylesheet" href="css/jquery.modal.css" />
+		<link rel="stylesheet" type="text/css" href="css/GliEditor.css"/>
+		<script type="text/javascript" src="js/jquery.js" ></script>
+		<script type="text/javascript" src="js/jquery.modal.js" ></script>
+	</head>
+	<body>
+		<div class='ge-insertImage'>
+			<div class='line'><span>网址：</span><input  name='src' placeholder="如：http://baiducom/loge.png"/></div>
+			<div class='line'><span>标题：</span><input  name='title'/></div>
+			<div class='line'><span>高度：</span><input  name='height' style='width: 70px;'/></div>
+			<div class='line'><span>宽度：</span><input  name='width' style='width: 70px;'/></div>
+		</div>
+		
+	</body>
+	<script>
+		$.modal({
+			'height':400,
+			'width':310,
+			'title':"插入图片",
+			"body":$(".ge-insertImage")[0].outerHTML,
+			'onSubmit':function(event){
+				console.log(event);
+			},
+			'onCancle':function(event){
+				console.log(event);
+			},
+		});
+	</script>
+</html>

@@ -1,0 +1,144 @@
+@charset "utf-8";
+.clear {
+	clear: both;
+}
+
+/**
+ * 容器
+ */
+
+.ge-container {
+	/*max-width: 800px;*/
+	min-width: 300px;
+	/*position: relative;*/
+	border: 1px solid #cccccc;
+	margin: auto;
+	z-index: 999;
+	
+	/*-webkit-user-select:none;
+    -moz-user-select:none;
+    -ms-user-select:none;
+    user-select:none;*/
+}
+
+
+/**
+ * 菜单
+ */
+
+.ge-container div,
+.ge-container span {
+	margin: 0px 0px;
+	padding: 0px 0px;
+	font-size: 16px;
+}
+
+.ge-container > .ge-menu {
+	background-color: #ffffff;
+}
+
+.ge-container > .ge-menu > .ge-menu-group {
+	float: left;
+	text-align: center;
+	padding: 0px 10px;
+	border: 1px solid #ccc;
+}
+
+.ge-container > .ge-menu .ge-menu-item {
+	float: left;
+	line-height: 20px;
+	/*font-size: 16px;*/
+	margin: 0px 5px;
+	cursor: pointer;
+	color: #9F9F9F;
+}
+
+.ge-container > .ge-menu .ge-menu-item:hover {
+	color: #333;
+}
+
+
+/**
+ * 编辑区域
+ */
+
+.ge-container .ge-editor {
+	/*max-height: 400px;*/
+	overflow-y: auto;
+	width: 100%;
+	border-top: 1px solid #ccc;
+	overflow-y: scroll;
+}
+/**
+ *去除样式干扰 开始
+ */
+.ge-container .ge-editor *{
+	font-size: inherit;
+}
+.ge-container .ge-editor font[size='1']{
+	font-size: 36px;
+}
+.ge-container .ge-editor font[size='2']{
+	font-size: 30px;
+}
+.ge-container .ge-editor font[size='3']{
+	font-size: 24px;
+}
+.ge-container .ge-editor font[size='4']{
+	font-size: 18px;
+}
+.ge-container .ge-editor font[size='5']{
+	font-size: 14px;
+}
+.ge-container .ge-editor font[size='6']{
+	font-size: 12px;
+}
+/**
+ *去除样式干扰结束
+ */
+
+.ge-container .ge-editor > .ge-editor-page {
+	word-wrap: break-word;
+	margin: 5px;
+	margin-right: 0px;
+	padding: 5px;
+	border: 1px dashed #8394CA;
+}
+
+.ge-container .ge-editor > .ge-editor-page[contenteditable=true] {
+	outline: none;
+}
+
+
+/**
+ * 插入图片提示框
+ * 
+ */
+
+.ge-insertImage {}
+
+.ge-insertImage .line {
+	padding: 10px 40px;
+}
+.ge-insertImage .line input[name='src']{
+	display: none;
+}
+/**
+ * 插入异体字提示框
+ * 
+ */
+
+.ge-insertVariant {
+	padding: 10px;
+}
+
+.ge-insertVariant font {
+	margin: 10px 10px;
+	font-size: 20px;
+	/*border: 1px solid;*/
+	cursor: pointer;
+}
+.ge-insertVariant font.selected {
+	border: 1px solid;
+	box-sizing: content-box;
+}

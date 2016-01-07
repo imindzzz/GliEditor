@@ -1,0 +1,117 @@
+@charset "utf-8";
+.colorpicker {
+	position: absolute;
+	top: 100px;
+	left: 100px;
+	width: 355px;
+	height: 180px;
+	border: 1px solid #CCCCCC;
+	-webkit-user-select: none;
+	display: none;
+	-webkit-user-select: none;
+	background-color: #FFFFFF;
+	z-index: 9999;
+	opacity: 0.5;
+	/*-webkit-user-select:none;
+    -moz-user-select:none;
+    -ms-user-select:none;
+    user-select:none;*/
+}
+
+.colorpicker .h {
+	/*display: inline-block;*/
+	float: left;
+	margin-left: 5px;
+	position: relative;
+	overflow: hidden;
+}
+
+.colorpicker .h .value {
+	height: 180px;
+	width: 20px;
+	background: -moz-linear-gradient(bottom, #ff0000 0%, #ffff00 17%, #00ff00 33%, #00ffff 50%, #0000ff 67%, #ff00ff 83%, #ff0000 100%);
+	background: -ms-linear-gradient(bottom, #ff0000 0%, #ffff00 17%, #00ff00 33%, #00ffff 50%, #0000ff 67%, #ff00ff 83%, #ff0000 100%);
+	background: -o-linear-gradient(bottom, #ff0000 0%, #ffff00 17%, #00ff00 33%, #00ffff 50%, #0000ff 67%, #ff00ff 83%, #ff0000 100%);
+	background: -webkit-gradient(linear, right bottom, right top, from(#ff0000), color-stop(0.17, #ffff00), color-stop(0.33, #00ff00), color-stop(0.5, #00ffff), color-stop(0.67, #0000ff), color-stop(0.83, #ff00ff), to(#ff0000));
+	background: -webkit-linear-gradient(bottom, #ff0000 0%, #ffff00 17%, #00ff00 33%, #00ffff 50%, #0000ff 67%, #ff00ff 83%, #ff0000 100%);
+	background: linear-gradient(to bottom, #ff0000 0%, #ffff00 17%, #00ff00 33%, #00ffff 50%, #0000ff 67%, #ff00ff 83%, #ff0000 100%);
+}
+
+.colorpicker .h .point {
+	position: absolute;
+	/*cursor: pointer;*/
+	top: 0px;
+	left: 0px;
+	width: 20px;
+	height: 1px;
+	background-color: #fff;
+}
+
+.colorpicker .alpha {
+	/*display: inline-block;*/
+	float: left;
+	margin-left: 5px;
+	position: relative;
+	overflow: hidden;
+}
+
+.colorpicker .alpha .value {
+	height: 180px;
+	width: 20px;
+	background: linear-gradient(to top, #444, rgba(0, 0, 0, 0));
+}
+
+.colorpicker .alpha .point {
+	position: absolute;
+	/*cursor: pointer;*/
+	top: 179px;
+	left: 0px;
+	width: 20px;
+	height: 1px;
+	background-color: #fff;
+}
+
+.colorpicker .sv {
+	height: 180px;
+	width: 180px;
+	/*display: inline-block;*/
+	float: left;
+	position: relative;
+	overflow: hidden;
+	background: linear-gradient(to right, #FFF, rgba(255, 255, 255, 0));
+	background-color: rgb(255, 0, 0);
+	border-right: 1px solid #CCCCCC;
+}
+
+.colorpicker .sv .value {
+	height: 180px;
+	width: 180px;
+	background: linear-gradient(rgba(0, 0, 0, 0), #000);
+}
+
+.colorpicker .sv .point {
+	position: absolute;
+	/*cursor: pointer;*/
+	top: 0px;
+	left: 0px;
+	width: 10px;
+	height: 10px;
+	border: 1px solid #fff;
+	border-radius: 100%;
+	box-sizing: border-box;
+}
+
+.colorpicker > .value {
+	font-size: 12px;
+	/*display: inline-block;*/
+	float: left;
+	margin-left: 5px;
+	height: 180px;
+	width: 115px;
+	line-height: 17px;
+}
+
+.colorpicker > .value input,.colorpicker > .value label {
+	width: 110px;
+	font-size: 12px;
+}
