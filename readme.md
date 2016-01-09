@@ -1,4 +1,4 @@
-# 精灵网资源编辑器
+# 富文本编辑器
 ## Getting Started
-`npm install`
+`npm install` <br>
 `grunt`
