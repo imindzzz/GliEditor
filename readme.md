@@ -1,7 +1,7 @@
 # 精灵网资源编辑器
 ## Getting Started
-'npm install -g grunt-cli'
-`npm install`
+`npm install grunt-cli -g`<br>
+`npm install` <br>
 `grunt`
 `浏览src/index.html`
 
