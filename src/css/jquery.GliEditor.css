@@ -142,3 +142,18 @@
 	border: 1px solid;
 	box-sizing: content-box;
 }
+/**
+ *插入公式提示框 
+ */
+.insertFormula{
+	padding: 10px 40px;
+}
+.insertFormula > .iframe{
+	height: 300px;
+	width: 100%;
+	border: 0px;
+}
+.insertFormula > .formula-preview{
+	display: block;
+	margin: 0 auto;
+}

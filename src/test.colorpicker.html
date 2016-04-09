@@ -33,28 +33,13 @@
 			<div style='clear: both;'></div>
 		</div>-->
 		<input  id ='color'/>
-		<p>asdasdasd</p>
-		<p contenteditable="true">asdasdasddddd<br/>asdasdasddddd<br/>asdasdasddddd<br/>asdasdasddddd<br/>asdasdasddddd<br/>asdasdasddddd<br/>asdasdasddddd<br/>asdasdasddddd<br/>asdasdasddddd<br/>asdasdasddddd<br/></p>
-		<p contenteditable="true">asdasdasd</p>
-		<p contenteditable="true">asdasdasd</p>
-		<p>asdasdasd</p>
-		<p>asdasdasd</p>
-		<p>asdasdasd</p>
-		<p contenteditable="true">asdasdasd</p>
-		<p>asdasdasd</p>
-		<p>asdasdasd</p>
-		<p>asdasdasd</p>
-		<p>asdasdasd</p>
-		<p>asdasdasd</p>
-		<p>asdasdasd</p>
-		<p>asdasdasd</p>
-		<p>asdasdasd</p>
 	</body>
 	<script type="text/javascript">
 		$("#color").colorPicker({
 			onChange:function(event){
+				console.log(event);
 				$("#color").val(event.hex);
-				$("#color").css("color",event.rgb);
+				$("#color").css("color",event.hex);
 			}
 		});
 	</script>

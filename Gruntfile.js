@@ -12,7 +12,7 @@ module.exports = function(grunt) {
 		config: config,
 		clean: {
 			files: [
-				'<%= config.dist %>/{,*/}*',
+				//'<%= config.dist %>/{,*/}*',
 			]
 		},
 		concat: {
@@ -24,6 +24,10 @@ module.exports = function(grunt) {
 					"<%= config.src %>/js/jquery.modal.js",
 					"<%= config.src %>/js/jquery.colorPicker.js",
 					"<%= config.src %>/js/jquery.Glieditor.js",
+					"<%= config.src %>/js/jquery.Glieditor.Menu.js",
+					"<%= config.src %>/js/jquery.Glieditor.Tpl.js",
+					"<%= config.src %>/js/jquery.Glieditor.Config.js",
+					"<%= config.src %>/js/jquery.Glieditor.Util.js",
 					"<%= config.src %>/js/jquery.uploadfile.js",
 				],
 				dest: "<%= config.dist%>/GliEditor.js",

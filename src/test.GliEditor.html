@@ -4,30 +4,11 @@
 		<meta charset="utf-8" />
 		<title>GliEditor</title>
 		<link rel="stylesheet" href="http://apps.bdimg.com/libs/fontawesome/4.4.0/css/font-awesome.min.css" />
+		<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
 		<script type="text/javascript" src="js/jquery.js" ></script>
 		
-		<!--可拖动特性-->
-		<script type="text/javascript" src="js/jquery.draggable.js" ></script>
-		
-		<!--可调大小特性-->
-		<script type="text/javascript" src="js/jquery.resizable.js" ></script>
-		<link rel="stylesheet" href="css/jquery.resizable.css" />
-		
-		<!--下拉选择器-->
-		<script type="text/javascript" src="js/jquery.select.js" ></script>
-		<link rel="stylesheet" type="text/css" href="css/jquery.select.css"/>
-		
-		<!--模态框-->
-		<script type="text/javascript" src="js/jquery.modal.js" ></script>
-		<link rel="stylesheet" href="css/jquery.modal.css" />
-		
-		<!--颜色选择器-->
-		<script type="text/javascript" src="js/jquery.colorPicker.js" ></script>
-		<link rel="stylesheet" href="css/jquery.colorPicker.css" />
-		
-		<!--编辑器-->
-		<script type="text/javascript" src="js/jquery.GliEditor.js" ></script>
-		<link rel="stylesheet" href="css/jquery.GliEditor.css" />
+		<link rel="stylesheet" href="../dist/GliEditor.css" />
+		<script type="text/javascript" src="../dist/GliEditor.js" ></script>
 	</head>
 	<body>
 		<button type="button" onclick="addPage('text')">增加文本</button>
@@ -37,7 +18,7 @@
 	<script type="text/javascript">
 		var pages		= [{
 				"type":"text",
-				'html':new Date().getTime(),
+				'html':"<span>"+new Date().getTime()+"</span>",
 			},{
 				"type":"img",
 				"html":"<img src='img/linus.png' height='100'/>",
@@ -50,14 +31,14 @@
 //				['bold','underline','italic','strikethrough','fontFamily','fontSize'],
 //				['justify'],
 //			],
-//			pages:pages,
+			pages:pages,
 		});
 		function addPage(type){
 			switch(type){
 				case "text":
 					Geditor.addPage({
 						"type":"text",
-						'html':new Date().getTime() ,
+						'html':"<span>"+new Date().getTime()+"</span>" ,
 					});
 				break;
 				case "img":

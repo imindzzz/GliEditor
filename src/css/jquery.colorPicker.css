@@ -4,6 +4,7 @@
 	top: 100px;
 	left: 100px;
 	width: 355px;
+	width: 210px;
 	height: 180px;
 	border: 1px solid #CCCCCC;
 	-webkit-user-select: none;
@@ -11,7 +12,6 @@
 	-webkit-user-select: none;
 	background-color: #FFFFFF;
 	z-index: 9999;
-	opacity: 0.5;
 	/*-webkit-user-select:none;
     -moz-user-select:none;
     -ms-user-select:none;
@@ -19,7 +19,7 @@
 }
 
 .colorpicker .h {
-	/*display: inline-block;*/
+	/*display: none;*/
 	float: left;
 	margin-left: 5px;
 	position: relative;
@@ -48,7 +48,7 @@
 }
 
 .colorpicker .alpha {
-	/*display: inline-block;*/
+	display: none;
 	float: left;
 	margin-left: 5px;
 	position: relative;
@@ -74,7 +74,6 @@
 .colorpicker .sv {
 	height: 180px;
 	width: 180px;
-	/*display: inline-block;*/
 	float: left;
 	position: relative;
 	overflow: hidden;
@@ -102,8 +101,8 @@
 }
 
 .colorpicker > .value {
+	display: none;
 	font-size: 12px;
-	/*display: inline-block;*/
 	float: left;
 	margin-left: 5px;
 	height: 180px;
