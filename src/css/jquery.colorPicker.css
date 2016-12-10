@@ -104,7 +104,7 @@
 	box-sizing: border-box;
 }
 
-.colorpicker > .value {
+.colorpicker > .values {
 	/*display: none;*/
 	font-size: 12px;
 	float: left;
@@ -113,10 +113,10 @@
 	width: 100%;
 	/*line-height: 17px;*/
 }
-.colorpicker > .value label{
+.colorpicker > .values label{
 	display: none;
 }
-.colorpicker > .value input{
+.colorpicker > .values input{
 	width: 160px;
 	height: 18px;
 	line-height: 18px;

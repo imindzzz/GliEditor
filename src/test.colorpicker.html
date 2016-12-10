@@ -4,7 +4,7 @@
 <head>
 	<meta charset="utf-8">
 	<title></title>
-	<script type="text/javascript" src="js/jquery.js"></script>
+	<!--<script type="text/javascript" src="js/jquery.js"></script>-->
 	<script type="text/javascript" src="js/jquery.colorPicker.js"></script>
 	<link rel="stylesheet" href="css/jquery.colorPicker.css" />
 </head>
@@ -32,23 +32,21 @@
 			</div>
 			<div style='clear: both;'></div>
 		</div>-->
-	<input id='color1' /><br/>
-	<input id='color2' />
+	<input id='color1' />
 </body>
 <script type="text/javascript">
-		$("#color1").colorPicker({
+		Picker = new colorPicker({
+			dom:document.getElementById('color1'),
 			onChange:function(event){
-				console.log(event);
-				$("#color1").val(event.hex);
-				$("#color1").css("color",event.rgb);
+				// console.log(event);
+				//$("#color1").val(event.hex);
+				document.getElementById('color1').value= event.hex;
+				document.getElementById('color1').style.color = event.rgb;
 			}
 		});
-		$("#color2").colorPicker({
-			onChange:function(event){
-				console.log(event);
-				$("#color2").val(event.hex);
-				$("#color2").css("color",event.rgb);
-			}
+		document.getElementById('color1').addEventListener("click", function () {
+			Picker.show();
+			return false;
 		});
 	</script>
 
