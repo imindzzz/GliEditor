@@ -153,17 +153,18 @@
 .modal-close {}
 @charset "utf-8";
 .colorpicker {
+	user-select: none;
 	position: absolute;
 	top: 100px;
 	left: 100px;
-	width: 355px;
-	width: 210px;
-	height: 180px;
+	width: 230px;
+	/*height: 220px;*/
+	padding: 5px;
 	border: 1px solid #CCCCCC;
 	-webkit-user-select: none;
 	display: none;
 	-webkit-user-select: none;
-	background-color: #FFFFFF;
+	background:#FFFFFF;
 	z-index: 9999;
 	/*-webkit-user-select:none;
     -moz-user-select:none;
@@ -188,6 +189,7 @@
 	background: -webkit-gradient(linear, right bottom, right top, from(#ff0000), color-stop(0.17, #ffff00), color-stop(0.33, #00ff00), color-stop(0.5, #00ffff), color-stop(0.67, #0000ff), color-stop(0.83, #ff00ff), to(#ff0000));
 	background: -webkit-linear-gradient(bottom, #ff0000 0%, #ffff00 17%, #00ff00 33%, #00ffff 50%, #0000ff 67%, #ff00ff 83%, #ff0000 100%);
 	background: linear-gradient(to bottom, #ff0000 0%, #ffff00 17%, #00ff00 33%, #00ffff 50%, #0000ff 67%, #ff00ff 83%, #ff0000 100%);
+	cursor: row-resize;
 }
 
 .colorpicker .h .point {
@@ -201,7 +203,7 @@
 }
 
 .colorpicker .alpha {
-	display: none;
+	display: block;
 	float: left;
 	margin-left: 5px;
 	position: relative;
@@ -212,6 +214,7 @@
 	height: 180px;
 	width: 20px;
 	background: linear-gradient(to top, #444, rgba(0, 0, 0, 0));
+	cursor: row-resize;
 }
 
 .colorpicker .alpha .point {
@@ -229,16 +232,17 @@
 	width: 180px;
 	float: left;
 	position: relative;
-	overflow: hidden;
+	/*overflow: hidden;*/
 	background: linear-gradient(to right, #FFF, rgba(255, 255, 255, 0));
 	background-color: rgb(255, 0, 0);
-	border-right: 1px solid #CCCCCC;
+	/*border-right: 1px solid #CCCCCC;*/
 }
 
 .colorpicker .sv .value {
 	height: 180px;
 	width: 180px;
 	background: linear-gradient(rgba(0, 0, 0, 0), #000);
+	/*cursor: crosshair;*/
 }
 
 .colorpicker .sv .point {
@@ -248,24 +252,30 @@
 	left: 0px;
 	width: 10px;
 	height: 10px;
-	border: 1px solid #fff;
+	border: 1px ridge #fff;
 	border-radius: 100%;
 	box-sizing: border-box;
 }
 
 .colorpicker > .value {
-	display: none;
+	/*display: none;*/
 	font-size: 12px;
 	float: left;
-	margin-left: 5px;
-	height: 180px;
-	width: 115px;
-	line-height: 17px;
+	margin-top: 10px;
+	/*height: 180px;*/
+	width: 100%;
+	/*line-height: 17px;*/
 }
-
-.colorpicker > .value input,.colorpicker > .value label {
-	width: 110px;
-	font-size: 12px;
+.colorpicker > .value label{
+	display: none;
+}
+.colorpicker > .value input{
+	width: 160px;
+	height: 18px;
+	line-height: 18px;
+	font-size: 15px;
+	text-align: center;
+	outline:none;
 }
 @charset "utf-8";
 .clear {
